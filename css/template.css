@@ -1,0 +1,394 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 35px;
+    overflow-x: hidden;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    color: white;
+    background-color: #BDBDBD;
+}
+
+.indexbox {
+    width: 95%;
+    height: 80%;
+    font: bold;
+    padding: 20px;
+    margin: 25px;
+    border-style: ridge;
+    text-align: center;
+    border-color: blue;
+}
+
+.indexbox2 {
+    width: 820px;
+    height: 400px;
+    font: bold;
+    padding: 20px;
+    margin: 25px;
+    border-style: ridge;
+    text-align: center;
+    border-color: blue;
+    float: left;
+}
+
+.box {
+    padding: 10px;
+    background: #3e8e41;
+    border: 1px solid #555;
+    width: 240px;
+    height: 120px;
+    margin: auto;
+    display: none
+}
+
+.note {
+    font-size: larger;
+    font: bold;
+}
+
+p {
+    color: rgb(248, 26, 26);
+}
+
+.navbar {
+    width: auto;
+    height: 20%;
+    background-color: #555;
+    overflow: auto;
+    position: relative;
+    grid-area: navbar;
+}
+
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 12px;
+    cursor: alias;
+}
+
+.navbar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: left;
+        display: block;
+    }
+}
+
+.brans {
+    font-size: medium;
+    border-radius: inherit;
+    padding: 12px;
+    background-color: #3e8e41;
+    border: none;
+    margin: auto;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+input[type=search] {
+    width: 240px;
+    height: 45px;
+    margin-left: 410px;
+}
+
+.online {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+
+.ite {
+    display: flex;
+}
+
+.vertical-menu {
+    width: 15%;
+    height: 60%;
+    float: left;
+    position: relative;
+    margin-top: 10px;
+}
+
+.vertical-menu a {
+    background-color: #555;
+    /* Grey background color */
+    color: black;
+    /* Black text color */
+    display: block;
+    /* Make the links appear below each other */
+    padding: 16px;
+    /* Add some padding */
+    text-decoration: none;
+    /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color: #555;
+}
+
+.vertical-menu a.active {
+    background-color: #04AA6D;
+    color: #555;
+}
+
+.sbt {
+    width: 120px;
+    height: 45px;
+    margin-left: auto;
+    font-size: 12px;
+    font-style: oblique;
+}
+
+.notes {
+    color: black;
+    text-align: left;
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 12px;
+    border: none;
+}
+
+.notification {
+    background-color: #3e8e41;
+    border: none;
+    color: #3e8e41;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    border-radius: 50%;
+    position: relative;
+    font: bold;
+}
+
+.notification:hover {
+    background: red;
+}
+
+.notification .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+}
+
+.notification span {
+    color: red;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f1f1f1;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 12px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 16px;
+    width: 620px;
+    font-size: 12px;
+    grid-area: container;
+    margin-bottom: auto;
+}
+
+.containerwnv {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    width: 620px;
+    margin-top: 5px;
+    margin-left: 280px;
+    margin-right: 280px;
+    padding: 16px;
+}
+
+form {
+    border: 3px #f1f1f1;
+    font-size: 12px;
+    margin-bottom: auto;
+}
+
+input[type=text],
+select,
+textarea,
+input[type=email],
+input[type=password] {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 12px;
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 12px;
+    border-radius: 12px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #04AA6D;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
+label {
+    color: black;
+    font-size: 12px;
+}
+
+.clock {
+    color: #e4e4e4;
+    width: 235px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #141618;
+    font-size: 3.5rem;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 1080px;
+    margin-right: 5px;
+    padding: 16px;
+    float: left;
+    position: absolute;
+    margin-top: 25px;
+}
+
+.date,
+.weekday {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 0%);
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.2rem;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+}
+
+.weekday {
+    top: 70%;
+    color: white;
+    opacity: 1;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: lightpink;
+}
