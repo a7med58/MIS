@@ -119,7 +119,10 @@ input[type=search] {
 }
 
 .ite {
-    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
 
 .vertical-menu {
@@ -360,28 +363,31 @@ label {
 
 .clock {
     color: #e4e4e4;
-    width: 235px;
-    height: 300px;
-    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
     justify-content: center;
     align-items: center;
     border: 10px solid #141618;
     font-size: 3.5rem;
     border-radius: 50%;
     background-color: black;
-    margin-left: 1080px;
-    margin-right: 5px;
     padding: 16px;
     float: left;
     position: absolute;
     margin-top: 25px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
 }
 
 .date,
 .weekday {
     position: absolute;
-    left: 50%;
-    top: 20%;
+    left: 60%;
+    top: 5%;
     transform: translate(-50%, 0%);
     padding: 5px 10px;
     border-radius: 12px;
