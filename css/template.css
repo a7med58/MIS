@@ -315,10 +315,21 @@ button:hover {
     opacity: 0.8;
 }
 
+.logbutt {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #04AA6D;
+    margin-left: 40%;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
     background-color: #04AA6D;
+    margin-left: 40%;
+    padding-top: 3px;
 }
 
 .imgcontainer {
